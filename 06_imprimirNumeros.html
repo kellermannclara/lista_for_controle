@@ -7,10 +7,29 @@
 
     //ENTRADA
 
-    
+    let inicial = Number(prompt(`Informe o número inicial`));
+    let final = Number(prompt(`Informe o número final`));
+
+    let pares = [];
+    let impares = [];
+
     //PROCESSAMENTO
 
-    
+    if (inicial < final) {
+        for (let numero = inicial; numero <= final; numero++) {
+            if (Number.isInteger(numero / 2)) {
+                pares.push(numero);
+            } else {
+                impares.push(numero);
+            }
+        }
+        alert(`Entre os numeros ${inicial} e ${final} os números impares são ${impares.join(", ")} e os números pares são ${pares.join(", ")}`)
+    } else {
+        alert(`ERRO. O número inicial é maior que o número final`)
+    }
+
     //SAÍDA
+
+    
 
 </script>
