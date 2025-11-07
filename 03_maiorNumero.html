@@ -8,10 +8,21 @@
 
     //ENTRADA
 
+    let coisa = Number(prompt(`Informe o primeiro numero`));
+
     
     //PROCESSAMENTO
 
+    for (let numemero = 2; numemero <= 5; numemero++) {
+        const numeros = Number(prompt(`Informe o ${numemero}° numero`));
+
+        if (numeros > coisa) {
+            coisa = numeros
+        }
+    }
     
     //SAÍDA
+
+    alert(`O maior número é ${coisa}`)
 
 </script>
