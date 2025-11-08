@@ -7,12 +7,30 @@
 
     //ENTRADA
 
-    let numero =  Number(prompt(`Informe um número`));
+    let numero = Number(prompt(`Informe um numero`));
+    
+
 
     //PROCESSAMENTO
 
-    
+    let divisores = [];
+
+    for(let cooisa = 1; cooisa <= numero; cooisa++){
+
+        if(Number.isInteger(numero / cooisa)){
+            divisores.push(cooisa);
+        }
+    }
+
+
 
     //SAÍDA
+    
+    if(divisores.length > 2){
+        document.write(`O número ${numero} NÃO é primo`);
+    }else{       
+        document.write(`O número ${numero} É primo`);
+    }
+
 
 </script>

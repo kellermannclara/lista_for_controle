@@ -8,6 +8,7 @@
     */
 
     //ENTRADA
+    
     const candidato01 = prompt(`Informe o nome do candidato 01:`);
     const candidato02 = prompt(`Informe o nome do candidato 02:`);
     const candidato03 = prompt(`Informe o nome do candidato 03:`);
@@ -17,6 +18,7 @@
     let votos03 = 0;
 
     //PROCESSAMENTO
+
     for (let i = 1; i <= votantes; i++) {
         const voto = Number(prompt(`Informe o seu voto: \n1-${candidato01} \n2-${candidato02} \n3-${candidato03}`));
         if (voto == 1) {
@@ -31,6 +33,7 @@
     }
 
     //SAÍDA
+
     document.write(`O candidato ${candidato01} recebeu ${votos01} votos (${votos01 / votantes * 100}%)<br>`);
     document.write(`O candidato ${candidato02} recebeu ${votos02} votos (${votos02 / votantes * 100}%)<br>`);
     document.write(`O candidato ${candidato03} recebeu ${votos03} votos (${votos03 / votantes * 100}%)<br>`);

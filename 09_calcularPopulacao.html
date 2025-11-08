@@ -7,10 +7,25 @@
 
     //ENTRADA
 
+    let cinco = 50000;
+    let dez = 50000;
+
     
     //PROCESSAMENTO
+
+    let anosDez = 1;
+   
+    for(anosDez = 1; anosDez <=10; anosDez++){
+        dez = dez + (dez * 1.5) / 100;
+        
+        if(anosDez == 5 || anosDez == 10){
+            document.write(`No ano ${anosDez} a população é de ${dez.toFixed(2)}  <br>`);
+        }
+        
+    }
     
 
     //SAÍDA
+    
 
 </script>
